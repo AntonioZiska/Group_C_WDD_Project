@@ -1,0 +1,12 @@
+.header {
+  font-family: Cambria;
+  font-size: xx-large;
+  text-align: center;
+  padding: 50px;
+  background-color: lightblue;
+  background-image: linear-gradient(to bottom right, darkgray, lightblue);
+}
+.margin { 
+margin: 100px;
+
+}
