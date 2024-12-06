@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
       <!-- meta --> 
@@ -11,6 +10,21 @@
     <link rel="stylesheet" href="style.css">
 	
 	<script>
+
+	// Function to swap text and image
+        function swapElements() {
+            var paragraph = document.getElementById("myParagraph");
+            var image = document.getElementById("myImage");
+
+            // Toggle visibility of paragraph and image
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";  // Show paragraph
+                image.style.display = "none";      // Hide image
+            } else {
+                paragraph.style.display = "none";  // Hide paragraph
+                image.style.display = "block";     // Show image
+            }
+        }
            function validate() {
                let valid = true; // Flag to track form validity
                let msge = "Incomplete form: ";
@@ -63,7 +77,7 @@
            }
        </script>
 </head>
-<body>
+<body onLoad="swapElements()">
 <!-- header -->
     <header class="bg-light py-3 shadow-sm">
 	<!-- containers -->
@@ -73,7 +87,7 @@
                 <a class="nav-link active text-dark" href="#">Home</a>
                 <a class="nav-link text-dark" href="#">Info</a>
 				<h1 class="text-center text-primary">Peace</h1>
-                <a class="nav-link text-dark" href="#">War</a>
+                <a class="nav-link text-dark" href="file:///C:/Users/paulo/OneDrive/Desktop/weebdesiner%20folder/groupproject%20p,g,a/war/index.html">War</a>
                 <a class="nav-link text-dark" href="peace.html">contact</a>
 				
             </nav>
@@ -92,18 +106,20 @@
 
         <section class="row align-items-center my-5">
             <div class="col-md-4">
-                <img src="img/child.JPG" alt="A happy child"  style="width:700px;height:550px;" class="img-fluid rounded">
+                <img src="img/child.JPG" alt="A happy child"  style="width:700px;height:750px;" class="img-fluid rounded">
             </div>
             <!--1 first class row-->
 			<div class="col-md-8 b5">
 				<img src="img/future.jpg" alt="future " style="width:900px;height:380px;"><br>
 				<br>
-				<p>   Peace fosters economic growth, strengthens communities, and promotes emotional well-being.
+				<p id="myParagraph">   Peace fosters economic growth, strengthens communities, and promotes emotional well-being.
                     It creates opportunities for education, healthcare, and infrastructure development, laying a foundation for a brighter future.Everything mentioned above is what will bring inovation for our future but we can not forget that the future is also now. Every effort made in the past contributes to what we can achieve nowadays.It is important to think and rethink any action and decision because there will be consequences in the future. Developing a healthy relationship with you family, friends and the community is important in order to ensure peace can be developed and sustained for a long time into the future. 
 					</p>
+					    <img id="myImage" src="img/globehand.jpg" alt="imagem " style="width:900px;height:380px;">
+						<button onclick="swapElements()">Swap</button>
 			</div>
         </section>
-		 <!--1 second class row --->
+		 <!--1 second class row -->
         <section class="row text-center my-4 b1">
             <div class="col-md-12">
                 <h3>Harmony in communities</h3>
@@ -141,18 +157,9 @@
 					The future is very important for those who care about their family and the society. All future generations will depend on what efforts are made  nowadays. This includes things such as enhanced security,caring for the environment,having a financially stable economy and developing infrastructure to be suitable for the needs of the growing population. There are many others things that society is yet to identify that will also be important to consider to ensure there is stability in the world for future generations. By making the efforts now to build stability within society this will assist in people living happier, less stressful lives. When there is less stress it in turn helps to foster peace and allow it to grow within communities.
 				</p>
 			</div>
-		<!--5th class row-->	
-		    </section>
-			<section class="row text-center my-4 ">
-			<div class="row-md-8 ">
-			<img src="img/globehand.JPG " alt="GLOBEHAND" style="width:1100px; height:200px";>
-			</div>
+		
 			
 		
-			<div class="row-md-4">
-			 <form onsubmit="return validate()">
-        
-       </form>
 			</div>
 			</section>
 		   
@@ -160,7 +167,7 @@
 		 <form onsubmit="return validate()">
            Firstname: <input type="text" id="fn">
            Surname: <input type="text" id="sn"><br><br>
-           Telephone: <input type="numeric" id="tell">
+           Telephone: <input type="number" id="tell">
            Email: <input type="text" id="email"><br><br>
 
            <p>chose your gender:</p>
@@ -177,7 +184,7 @@
         </form>
 
         <div class="text-center mt-4">
-            <a href="disadvantages_of_peace.html" class="btn btn-primary">Next: Disadvantages of Peace</a>
+            <a href="file:///C:/Users/paulo/OneDrive/Desktop/weebdesiner%20folder/groupproject%20p,g,a/war/index.html" class="btn btn-primary">Next: desavantage of war</a>
         </div>
 		</div>
     </main>
@@ -187,5 +194,6 @@
     <footer class="text-center py-3 bg-light mt-5">
         <p>&copy; 2024 Paulo Henrique, all rights reserved.</p>
     </footer>
+   
 </body>
 </html>
