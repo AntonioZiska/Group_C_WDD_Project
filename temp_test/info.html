@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		
 		<meta charset="utf-8">
 		<title>Main SDG 16</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,7 +14,7 @@
 		  <meta name="author" content="Antonio Ziska">
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body onload="swap()">
+	<body></body>
 	
 
 
@@ -60,44 +61,51 @@
 								</ul>
 					<div class="col-sm-4"></div>
 			<div class="row">
-				<div class="col-sm-3">
-					 <a href="war.html"><img src="img/war_main_l.png" alt="soldier signifying war" ></a>
+				<div class="col-sm-12">
+					<p>Thank you for having an interest in the SDG goals and helping improve and heal our world by helping to maintain and improve our home in one of many ways in coralation to this or one of the othere 17 SDG goals</p>
 				</div>
-				<div class="col-sm-5 mr">
-					<p>The focus of this site is to bring attention to SDG goal 16. Peace, Justice and Strong Institutions: Inclusive societies, strong institutions and equal access to justice. by bringing attention to the worlds history of war and bringing up some possible changes in how we act today to further improve our world.
-					<br>
-					On the following pages you will see a focus on war and peace in the world and the boons and troubles that come with each of them.</p>
-					<br>
-				</div>
-				<div class="col-sm-4 peace_img_r">
-					<a href="peace.html"><img src="img/dove_main_r.png" alt="dove signifying peace" ></a>
-				</div>
+				
 			</div>
 			<div class="row">
-				<div class="col-sm-5"></div>
-				<div class="col-sm-2">
-					<form>
-						<label>Name</label>
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<form onsubmit="return validate()">
+						<label>Name
+							<br>
+							<input id="name" type="text" placeholder="Your first name">
+							<br>
+						</label>
+						<label>Surname
+							<br>
+							<input id="sname" type="text" placeholder="Your surname">
+							<br>
+						</label>
+
+						<label>Email
+							<br>
+							<input id="mail" type="email" placeholder="xyz@abc.com">
+							<br>
+						</label>
+
+						<label>Report bugs (optional)
+							<br>
+							<textarea id="bug" rows="5" cols="49" placeholder="Describe the bug"></textarea>
+							<br>
+						</label>
+
+						<label>Give feedback
+							<br>
+							<textarea id="fback" rows="5" cols="49" placeholder="Your feedback"></textarea>
+							<br><br>
+						</label>
+
+						<input type="submit" value="Submit form">
 						<br>
-						<input name="name" type="text" value="your first name">
-						<br>
-						<label>Surname</label>
-						<br>
-						<input name="sname" type="text" value="your surname">
-						<br>
-						<label>Email</label>
-						<br>
-						<input name="bonus" type="text" value="xyz@abc.com">
-						<br>
-						<label>Report bugs(optional)</label>
-						<br>
-						<input name="bug" type="text" value="img x on page x isn't loading">
-						<br>
-						<label>Give feedback</label>
-						<br>
-						<input name="bonus" type="text" value="wow this site was just so amazing and educational">
-						<br>
+
+						<!-- Add a div to show messages -->
+						<div id="details"></div>
 					</form>
+					<p id="details">Please fill out form</p>
 				</div>
 				<div class="col-sm-4"></div>
 			</div>
@@ -110,6 +118,6 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		
-		
+		<script src="js/external.js"></script>
 	</body>
 </html>

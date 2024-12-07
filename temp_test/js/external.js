@@ -66,19 +66,31 @@ function swap(){
 
 /* info page JS form valid */
 
-function validate(){
+function validate() {
 	let valid = true;
 	let msge = "Incomplete form: ";
-	if(document.getElementById("fn").value  == ""){
-		msge+= "You need to fill firstname. ";
+	if (document.getElementById("name").value == "") {
+		msge += "You need to fill in the first name. ";
 		valid = false;
 	}
-	if(document.getElementById("sn").value  == ""){
-		msge+= "You need to fill surname. ";
+	if (document.getElementById("sname").value == "") {
+		msge += "You need to fill in the surname. ";
 		valid = false;
 	}
-	if(!valid){
+	if (document.getElementById("mail").value.indexOf('@') == false) {
+		msge += "Invalid email. ";
+		valid = false;
+	}
+
+	if (document.getElementById("fback").value == "") {
+		msge += "You need to fill in feedback. ";
+		valid = false;
+	}
+	if (!valid) {
 		document.getElementById("details").innerHTML = msge;
+	} else {
+		let name = document.getElementById("name").value;
+		document.getElementById("details").innerHTML = "Good luck and farewell, " + name;
 	}
 	return valid;
 }
