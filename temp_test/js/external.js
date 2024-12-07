@@ -49,3 +49,17 @@ window.onclick = function(event) {
 	
 }
 */
+
+
+
+/* main/home page JS array+random func for img */
+
+function swap(){
+	let array=["img/earth.png", "img/dove_main.png", "img/soldier.png", "img/earth_flat.png"];
+	for (let i = 0; i < 4; i++) {
+		let doc=document.getElementById(i);
+		let lng=array.length;
+		let img=array[Math.floor(Math.random()*lng)]
+		doc.setAttribute("src", img);
+	}
+}
