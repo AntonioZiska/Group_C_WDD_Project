@@ -34,9 +34,6 @@
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
@@ -45,6 +42,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
+	margin-bottom: 10px;
+	left:50%;
 }
 
 .grid-item img {
@@ -52,10 +51,12 @@
     height: auto;
     display: block;
 }
-
-
-
-
+.mr{
+	padding-left:120px;
+}
+.peace_img_r{
+	padding-left: 100px;
+}
 
 
 
