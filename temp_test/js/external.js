@@ -63,3 +63,22 @@ function swap(){
 		doc.setAttribute("src", img);
 	}
 }
+
+/* info page JS form valid */
+
+function validate(){
+	let valid = true;
+	let msge = "Incomplete form: ";
+	if(document.getElementById("fn").value  == ""){
+		msge+= "You need to fill firstname. ";
+		valid = false;
+	}
+	if(document.getElementById("sn").value  == ""){
+		msge+= "You need to fill surname. ";
+		valid = false;
+	}
+	if(!valid){
+		document.getElementById("details").innerHTML = msge;
+	}
+	return valid;
+}
