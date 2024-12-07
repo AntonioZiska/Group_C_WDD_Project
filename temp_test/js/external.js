@@ -70,14 +70,17 @@ function validate() {
 	let valid = true;
 	let msge = "Incomplete form: ";
 	if (document.getElementById("name").value == "") {
-		msge += "You need to fill in the first name. ";
+		msge += "You need to fill in the name. ";
 		valid = false;
+	}
+	if(document.getElementById("name").value == "Rick" && document.getElementById("sname").value == "Astley") {
+		window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 	}
 	if (document.getElementById("sname").value == "") {
 		msge += "You need to fill in the surname. ";
 		valid = false;
 	}
-	if (document.getElementById("mail").value.indexOf('@') == false) {
+	if (document.getElementById("mail").value.indexOf('@')<0) {
 		msge += "Invalid email. ";
 		valid = false;
 	}
