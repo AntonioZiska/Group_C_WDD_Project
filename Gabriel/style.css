@@ -1,0 +1,33 @@
+header {
+	background-color:white;
+	border:10px;
+}
+body{
+	background-color:grey;
+}
+.m1{
+	padding:50;
+	margin:-50;
+}
+      .imgwar {
+        width: 100%; /* make images to have it's full width */
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .img-container {
+        margin-bottom: 15px; 
+      }
+.m2{
+	background-color:grey;
+	font-weight:bold;
+	color:white;
+}
+.m3{
+	color:white;
+	
+}
+.m4{
+	background-color:#424242;
+	border: 0px;
+	margin: auto;
+}
