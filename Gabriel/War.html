@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta end -->
+    <title>War, Technology, adv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="text/javascript" src="js/external.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inline JavaScript for Form Validation -->
+    <script>
+      function validateForm(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Fetch form values
+        const name = document.getElementById('name').value.trim();
+        const radios = document.getElementsByName('likeContent');
+        const personalThoughts = document.getElementById('thoughts').value.trim();
+        let radioChecked = false;
+        for (const radio of radios) {
+          if (radio.checked) {
+            radioChecked = true;
+            break;
+          }
+        }
+        // Validation
+        if (name === '') {
+          alert('Please enter your name.');
+          return false;
+        }
+        if (!radioChecked) {
+          alert('Please select an option for "Do you like the informative content of this website?".');
+          return false;
+        }
+        if (personalThoughts === '') {
+          alert('Please provide your personal thoughts.');
+          return false;
+        }
+        // Success
+        alert('Thank you for your feedback!');
+        document.getElementById('feedbackForm').reset(); // Clear form
+      }
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- container -->
+			<div class="row">
+<div class="col-sm-5">
+	<a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/"><img src="img/sdg.png" alt="sdg logo" ></a>
+</div>
+<div class="col-sm-7">
+<div class="topnav">
+<ul class="nav">
+<li class="nav-item">
+<div>
+<button onmouseenter="drpdwnw()" class="dropbtn"><a class="nav-link" href="War.html">War</a></button>
+<div id="drpdwncw" onmouseleave="drpdwnw()" class="dropdown-content">
+<a href="b_war.html">benefits</a>
+<a href="d_war.html">drawbacks</a>
+</div>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="info.html">Info</a>
+</li>
+<li class="nav-item">
+<div class="dropdown">
+<button onmouseenter="drpdwnp()" class="dropbtn"><a class="nav-link" href="peace.html">Peace</a></button>
+<div id="drpdwncp" class="dropdown-content" onmouseleave="drpdwnp()">
+<a href="b_peace.html">benefits</a>
+</div>
+</div>
+</li>
+</div>
+</div>
+</ul>
+</div>
+<br>
+<hr>
+    </header>
+	<!-- header end-->
+
+    
+    <!-- Main Content -->
+    <div class="container">
+      <div class="container mt-12 m4">
+        <h1 class="text-center text-danger">The seek for innovation and power leading to self-destruction</h1>
+        <p class="text-center text-danger">The main goal of this section is to mention how war can be harmful, damaging both human lives and ecosystem. Although, It is known the War brings Innovation in different fields, but with what cost?</p>
+      </div>
+    </div>
+    <br>
+    
+    <div class="container-fluid m2">
+      <div class="container mt-12">
+        <h2>This project is focused on the peace and war aspects of the SDG16 and this section aims to elaborate the war consequences</h2>
+      </div>
+<hr>
+
+      <!-- Row 1: 6x6 columns -->
+      <div class="row m3">
+        <div class="col-md-6 m3 m4">
+          <p class="text-left text-white m3">The conflict between countries can offer innovation in medicine, during the world war II a huge effort on medical procedures such as surgeries, first-aid techniques, blood transfusion and vaccines. Therefore, it is a matter of fact the battlefield reworked the medicine we know and still makes a positive impact.</p>
+		  <p>Although, this quick progress which usually would take decades was layed on a necessity, the warzone required grand effort to save lives, either soldiers and civillians were massively affected for the sake of the leaders ambitions, and the price of this rapid and unnatural improvement was paid with countless human lives.</p>
+		  <p>In addition, the access for basic resources by civillians such as water, food and medical supplies are drastically reduced based on the war crisis. Some countries avoid to offer supplies and financial support because by doing so they might face the consequences of this action, joining a possible war on their territory, ending up leaving several civillians who have no relation with the war itself affected for leaders ambitions, having to adapt their lifestyle to survive the inhumanity of war.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="imgwar" src="img/tank.png" alt="war placeholder" style="height:400px;">
+        </div>
+      </div>
+
+      <!-- Row 2: 2x2x2x6 columns with images and margin -->
+      <div class="row">
+        <div class="col-md-2 img-container">
+          <img src="img/soldier.jpg" alt="warzone" style="width:100%; height:480px; margin-bottom: 15px;">
+        </div>
+        <div class="col-md-2 img-container">
+          <img src="img/destruction.jpg" alt="warzone" style="width:100%; height:auto; margin-bottom: 15px;">
+          <img src="img/warzone.jpg" alt="warzone" style="width:100%; height:auto;">
+        </div>
+        <div class="col-md-2 img-container">
+          <img src="img/kaboom.jpg" alt="warzone" style="width:100%; height:480px;">
+        </div>
+        <div class="col-md-6 m4">
+          <p>As an example, During World War II after Germany losing the war in 1945, Japan's emperor named Hirohito decided to attack the American and British forces in asia as well as seize SouthEast Asia reforces, that action leaded massive destruction for Imperial Japan.</p>
+		  <p>As a result of one man's action, Hiroshima and Nagasaki received the first nuclear bomb attack in history, leading several japanese people to death and those who had contact with the bomb radiation and survived have had health complications such as cancer.</p>
+		  <p>Kunihiko Bonkohara, one of the survivors of Hiroshima Nuclear attack has shared how the nuclear bomb dropped by United States still affects people's life in Japan until this day. In fact, Bonkohara was 5 years old when the American bomb named "Little boy" was dropped in Japanese territory, when his father noticed a bright light coming from the bomb, he pushed Bonkohara under a table and body protected his son from the explosion and suprisingly they made out alive.</p>
+		  <p>Although, Every since the contact with radiation, Kunihiko Bonkohara suffered from several debilitating illneses such as a lung cancer during primary school which he recovered from and at the age of 20 he immigrated to Brazil, he says “At the moment I am helping to support procedures for medical care and treatment for Hibakusha living in Latin America. Furthermore, I give testimonies in schools in Brazil and have been invited to Hiroshima and Nagasaki to give testimonies as well.” </p>
+		  <p>The word "Hibakusha" is a term reffering to survivors of Hiroshima and Nagasaki bomb attacks.</p>
+        </div>
+      </div>
+    </div>
+<hr>
+<br>
+	<div class="container mt-12 m2">
+		<h3 class="text-center text-danger m4">Hope during hard times</h3>
+	</div>
+<br>
+<div class="row m3">
+        <div class="col-md-6 m3 m4">
+          <p class="text-white m3">Many of Hibakusha made great effort on anti nuclear weapons campaign by sharing their history.</p>
+		  <p>Stories of determination from living witnesses of the horror of the war and nuclear weapons. their testimonies describes the unnaceptable effects of nuclear weapons in human beings.</p>
+		  <p>After many long decades of advocating for a nuclear-free world, the Treaty on the Prohibition of Nuclear Weapons, which was originally signed in 2017, is an extremely important treaty to the Hibakusha community. According to a study of 6000 Hibakusha, which was conducted by Kyodo News, most believe Japan should sign the United Nations treaty prohibiting nuclear weapons, this really highlighting their dissatisfaction with the government's resistance to the deal. Joining the treaty would be Japan's acceptance and unity of its affected citizens' rights and suffering. 
+Since the Treaty's passage, many Hibakusha have worked tirelessly to stop nuclear weapons. The Hibakusha Appeal encourages all countries to join the TPNW. World leaders must hear Hibakusha's and other concerned people' pleas for a nuclear-free future.
+</p>
+        </div>
+        <div class="col-md-2">
+<br><br>
+          <img class="imgwar" src="img/stop.png" alt="war placeholder" style="width:150px; height:150px">
+		  <img class="imgwar" src="img/worldbomb.png" alt="war placeholder" style="width:150px; height:150px">
+        </div>
+		<div class="col-md-4">
+		<div class="container-fluid">
+      <h4 class="text-center">We value your feedback</h4>
+      <form id="feedbackForm" class="mt-4" onsubmit="validateForm(event)">
+        <!-- Name Input -->
+        <div class="mb-3">
+          <label for="name" class="form-label">What is your name?</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name">
+        </div>
+        <!-- Radio Buttons -->
+        <div class="mb-3">
+          <label class="form-label">Do you like the informative content of this website?</label><br>
+          <div class="form-check">
+            <input type="radio" id="likeYes" name="likeContent" value="yes" class="form-check-input">
+            <label for="likeYes" class="form-check-label">Yes</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="likeNo" name="likeContent" value="no" class="form-check-input">
+            <label for="likeNo" class="form-check-label">No</label>
+          </div>
+        </div>
+        <!-- Personal Thoughts box -->
+        <div class="mb-3">
+          <label for="thoughts" class="form-label">Personal Thoughts</label>
+          <textarea id="thoughts" class="form-control" rows="4" placeholder="Share your personal thoughts here"></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+      </form>
+    </div>	
+</div>
+</div>
+	
+	
+	
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
