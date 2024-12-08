@@ -104,8 +104,8 @@
       </div>
 <hr>
 
-      <!-- Row 1: 6x6 columns -->
-      <div class="row m3">
+      <!-- Row 1: 6x6 columns  with ID for easier manipulation of dom in-line JavaScripit-->
+      <div id="row1" class="row m3">
         <div class="col-md-6 m3 m4">
           <p class="text-left text-white m3">The conflict between countries can offer innovation in medicine, during the world war II a huge effort on medical procedures such as surgeries, first-aid techniques, blood transfusion and vaccines. Therefore, it is a matter of fact the battlefield reworked the medicine we know and still makes a positive impact.</p>
 		  <p>Although, this quick progress which usually would take decades was layed on a necessity, the warzone required grand effort to save lives, either soldiers and civillians were massively affected for the sake of the leaders ambitions, and the price of this rapid and unnatural improvement was paid with countless human lives.</p>
@@ -116,8 +116,8 @@
         </div>
       </div>
 
-      <!-- Row 2: 2x2x2x6 columns with images and margin -->
-      <div class="row">
+      <!-- Row 2: 2x2x2x6 columns with images and margin with ID for easier manipulation of DOM in-line JavaScript-->
+      <div id="row2" class="row"> 
         <div class="col-md-2 img-container">
           <img src="img/soldier.jpg" alt="warzone" style="width:100%; height:480px; margin-bottom: 15px;">
         </div>
@@ -136,9 +136,29 @@
 		  <p>The word "Hibakusha" is a term reffering to survivors of Hiroshima and Nagasaki bomb attacks.</p>
         </div>
       </div>
-    </div>
-<hr>
-<br>
+	  <br>
+	   <div class="text-center"> <!-- button-->
+    <button onclick="
+		<!-- inline javascript dom-->
+        (function() { 
+            // Get references to the two rows by their IDs
+            var row1 = document.getElementById('row1'); 
+            var row2 = document.getElementById('row2'); 
+            var parent = row1.parentNode; // Get the parent element containing the rows
+
+            // Check if row2 is immediately after row1
+            if (row1.nextSibling === row2) { 
+                // If true, move row2 before row1 (swap positions)
+                parent.insertBefore(row2, row1); 
+            } else { 
+                // If false, move row1 before row2 (swap back to original positions)
+                parent.insertBefore(row1, row2); 
+            }
+        })();
+    ">Swap Rows</button> <!--button end-->
+</div>
+ <br>
+
 	<div class="container mt-12 m2">
 		<h3 class="text-center text-danger m4">Hope during hard times</h3>
 	</div>
