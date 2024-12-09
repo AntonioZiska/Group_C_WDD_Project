@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta end -->
+    <title>War, Technology, Advancements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bgg">
+    <!-- Header -->
+    <header class="hg">
+        <div class="row bgn">
+				<div class="col-sm-5">
+					<a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">
+						<img src="img/sdg.png" alt="SDG Logo">
+					</a>
+				</div>
+				<div class="col-sm-7">
+					<div class="topnav">
+						<ul class="nav">
+							<li class="nav-item">
+								<button onmouseenter="drpdwnw()" class="dropbtn">
+									<a class="nav-link" href="War.html">War</a>
+								</button>
+								<div id="drpdwncw" onmouseleave="drpdwnw()" class="dropdown-content">
+									<a href="b_war.html">Benefits</a>
+									<a href="d_war.html">Drawbacks</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="info.html">Info</a>
+							</li>
+							<li class="nav-item">
+								<div class="dropdown">
+									<button onmouseenter="drpdwnp()" class="dropbtn">
+										<a class="nav-link" href="peace.html">Peace</a>
+									</button>
+									<div id="drpdwncp" class="dropdown-content" onmouseleave="drpdwnp()">
+										<a href="b_peace.html">Additional Information</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container mt-12 m4">
+        <h1 class="text-center text-danger">The Benefits of War</h1>
+        <p class="text-center text-danger">
+            The main goal of this section is to highlight the benefits of war when it comes to technology creation. It is known that war brings innovation in different fields.
+        </p>
+    </div>
+    <br>
+     <div class="container-fluid m2">
+      <div class="container mt-12">
+        <h2>This project is focused on the peace and war aspects of the SDG16 and this section aims to elaborate the war and how it somehow leaded to technological advances.</h2>
+      </div>
+<hr>
+      <!-- Row 1: 6x6 columns -->
+      <div class="row m3">
+        <div class="col-md-6 m3 m4">
+          <p class="text-left text-white m3">The conflict between countries can offer innovation in medicine as briefly mentioned on the war main page. You may be asking how War can be somehow beneficial considering it's toxic and against human-rights characteristics. The answer is layed on historical facts, to demonstrate in practice, this website will be covering some technologies created during war times.</p>
+		  <p>During World war II and Cold war some technological and medical innovations were needed for military reasons as well as show dominance agaisnt the enemy. To discover how war leaded to innovation besides it's harmful aspect to humanity and ecosystem, it will be listed in this page 3 technologies that originated from war conflicts.</p>
+		  <p>To find out the other 2 missing, please click on the Randomizer button, An image with it's description will show up.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="imgwar" src="img/medicine.png" alt="war placeholder" style="height:400px ; width:480px">
+        </div>
+      </div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-5">
+		<h3 class="text-left text-danger m2">click it</h3>
+		<input type="button" value="Randomizer" onclick="randomizeContent()">
+		</div>
+		<div class="col-md-6 m4">
+		<p id="demo">Innovation in medicine during World War II, such as surgeries, vaccines, and first-aid techniques, revolutionized healthcare as mentioned on the main war page</p>
+		</div>
+	</div>
+<br>
+<br>
+<hr>
+    <script>
+        function randomizeContent() {
+            const randomData = [
+                {
+                    text: "Innovation in medicine during World War II, such as refined surgeries, vaccines, and new first-aid techniques such as blood transfusion revolutionized healthcare based on a necessity to keep either civillians and soldiers alive.",
+                    imgSrc: "img/medicine.png"
+                },
+                {
+                    text: "The Cold War spurred advancements in space technology, leading to the development of satellites and space exploration. The first artificial satellite, the creation of Nasa and the first human to step on moon.",
+                    imgSrc: "img/rocket.png"
+                },
+                {
+                    text: "Military conflicts during World War II drove innovations in the Computational sector, the world first programmable computer developed by United States for calculations. Developed to simplify and automize demanding tasks. It is a matter of fact the computer had a lack of features, but the idea of Personal Computer and programming started with this innovation.",
+                    imgSrc: "img/computer.png"
+                }
+            ];
+
+            // Select a random item from the array
+            const randomItem = randomData[Math.floor(Math.random() * randomData.length)];
+
+            // Update the text and image
+            document.getElementById("demo").textContent = randomItem.text;
+            const imgElement = document.querySelector(".imgwar");
+            if (imgElement) {
+                imgElement.src = randomItem.imgSrc;
+            }
+        }
+    </script>
+	<div class="container mt-12 m4">
+		<h3 class="text-center text-danger">By understanding how war has changed the world with technological advents</h3>
+		<p class="text-center text-danger"> It is important to know peace has no drawbacks, the rapid technological advance induced by war has killed innocents and there is nothing more valuable than human rights.</p> 
+	</div>
+<br><br>
+<div class="row m3">
+        <div class="col-md-12 m4">
+          <p class="text-center">For more informations, check the top left Icon located on the Navigation bar. By clicking the Icon you will be redirected to the Sustainable Development Goals website. This website project developed by students from Group C tries to complement the topic 16 "Peace, Justice and Institutions"</p>
+		  <p class="text-center text-danger">The decision to introduce historical war facts such as the inhumanity and destruction of war and its consequences as well as the benefits war may cause was intended to give a different perspective of the S.D.G.16, mentioning historical events that changed the world.</p>
+
+        </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

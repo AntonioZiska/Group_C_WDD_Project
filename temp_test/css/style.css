@@ -1,63 +1,191 @@
-/* Dropdown Button */
+/*Antonio*/
+/* Dropdown */
 .dropbtn {
-  color: white;
-  border: none;
-  cursor: pointer;
+	color: blue;
+	border: 0px;
+	cursor: pointer;
+	min-width: 60px;
+	min-height: 40px;
 }
 
-/* Dropdown button on hover & focus */
+/*effect*/
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+	background-color: red;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/*block*/
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/*Content*/
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0 8px 16px;
 }
 
-/* Links inside the dropdown */
+/*Links*/
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+	display: block;
+}
 
+/*Grid*/
 .grid-container {
-	center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-	margin-bottom: 10px;
-	left:50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
+/*Images*/
 .grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
-.mr{
-	padding-left:120px;
+
+/*Margins*/
+.mr {
+	padding-left: 120px;
 }
-.peace_img_r{
+
+.peace_img_r {
 	padding-left: 100px;
 }
 
+/*Background*/
+.bgn {
+	background-color: white;
+}
 
 
 
+
+/*Paulo*/
+/* Header and Section Styles */
+.bgp {
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+	background-color:#409899;
+}
+.bi {
+
+
+}
+/* Header Styles */
+.hp {
+    border-bottom: 5px solid #ddd;
+	
+}
+
+header h1 {
+	font-size: 2.5 rem;
+    font-weight: bold;
+}
+
+/* Section Styles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.img2{
+	margin-top:0px;
+	margin-bottom:100px;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+div{
+	background-color:
+
+}
+.b1{
+	background-color:#060270;
+	color:white;
+
+}
+.b2{
+	background-color:#490DCB;
+    color:white;
+	
+}
+.b3{
+	background-color:#060270;
+	color:white;
+}
+.b4{
+	background-color:#060270;
+	color:white;
+	
+	
+}
+.b5{
+	font-weight:bold;
+	
+}
+.globe{
+	margin-top:40px;
+	padding-top:40px;
+}
+.br{
+	font-weight:bold;
+	color:red;
+
+/*Gabriel*/
+.hg {
+	background-color:white;
+	border:10px;
+}
+.bgg{
+	background-color:grey;
+}
+.m1{
+	padding:50;
+	margin:-50;
+}
+      .imgwar {
+        width: 100%; /* make images to have it's full width */
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .img-container {
+        margin-bottom: 15px; 
+      }
+.m2{
+	background-color:grey;
+	font-weight:bold;
+	color:white;
+}
+.m3{
+	color:white;
+	
+}
+.m4{
+	background-color:#424242;
+	border: 0px;
+	margin: auto;
+}
